@@ -1,0 +1,199 @@
+/*=================================*/
+/* Nivo Slider Demo
+/* November 2010
+/* By: Gilbert Pellegrom
+/* http://dev7studios.com
+/*=================================*/
+
+/*====================*/
+/*=== Reset Styles ===*/
+/*====================*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-weight:inherit;
+	font-style:inherit;
+	font-size:100%;
+	font-family:inherit;
+	vertical-align:baseline;
+}
+body {
+	line-height:1;
+	color:black;
+	background:white;
+}
+table {
+	border-collapse:separate;
+	border-spacing:0;
+}
+caption, th, td {
+	text-align:left;
+	font-weight:normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content:"";
+}
+blockquote, q {
+	quotes:"" "";
+}
+/* HTML5 tags */
+header, section, footer,
+aside, nav, article, figure {
+	display: block;
+}
+html, body{
+	height: 100%;
+}
+
+/*===================*/
+/*=== Main Styles ===*/
+/*===================*/
+body {
+	font: small Arial, Helvetica, sans-serif; 
+	color:#eee;
+	background:#ccc;
+}
+
+header{
+	background:#000;
+	height: 30px;
+	padding-top: 2px;
+	border-bottom: 2px solid #fff;
+}
+
+header a{
+	cursor:pointer;
+	padding: 5px 15px 0 0;
+	float: right;
+}
+
+.logo{
+	font: large "Comic Sans MS";
+	padding: 0 0 0 30px;
+	width:250px;
+	float: left;
+}
+
+a, a:visited {
+	font-size:small;
+	color:#999;
+	text-decoration:none;
+}
+a:hover, a:active {
+	color:#fff;
+	text-decoration:none;
+}
+
+#content{
+	min-height:100%;
+	height: auto !important;
+	margin: 0 auto -24px auto;  /* negative height of the sticky footer */	
+}
+
+#wrapper{
+	margin: auto;
+	padding: 10px;
+	max-width:800px;
+	width:80%;
+	height: 100%;
+}
+
+.push{
+	height:20px;
+}
+
+footer{
+	background:#000;
+	border-top: 1px solid white;
+	height: 20px;
+	text-align:center;
+	padding: 5px;
+}
+
+footer p{
+	font-size:12px;
+}
+
+.slider-wrapper { 
+	width: 100%; 
+	margin: 0 auto;
+}
+
+.theme-default #slider {
+    margin:0 auto;
+}
+
+.social{
+	float:right;
+}
+
+
+.buy-button{
+	position:absolute;
+	right: 0px;
+	top:20px;
+	background:#000;
+	color:#fff;
+	width:35px;
+	z-index:8;
+	padding: 5px 5px;
+	opacity: 0.7;
+	overflow: hidden;
+	-moz-opacity: 0.7;
+	filter:alpha(opacity=8);
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+
+
+/*====================*/
+/*===  Modal Mask  ===*/
+/*====================*/
+
+#mask{  
+    position:absolute; /* important */  
+    top:0px; /* start from top */  
+    left:0px; /* start from left */  
+    height:100%; /* cover the whole page */  
+    width:100%;  /* cover the whole page */  
+    display:none; /* don't show it '*/  
+  
+    /* styling below */  
+    background-color: black;  
+}  
+  
+.modal_window{  
+    position:absolute; /* important so we can position it on center later */  
+    top:0px;
+    display:none; /* don't show it */  
+    color:white;  
+    border: 1px solid #eee;
+    padding: 50px;
+}  
+  
+/* style a specific modal window   
+#terms_modal{  
+    padding:50px;  
+    border:1px solid gray;  
+    background: #246493;  
+    color:black;  
+}  */
+
+/*====================*/
+/*=== Other Styles ===*/
+/*====================*/
+.clear {
+	clear:both;
+}

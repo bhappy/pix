@@ -1,0 +1,68 @@
+<% provide(:title, 'loxopix') %>
+
+  <div id="content">
+  	
+	<header>
+	  <div class="logo">Loxopix</div>
+	  
+	  <a class="activate_modal" name="about_modal">about us</a>
+	  <a class="activate_modal" name="terms_modal">terms</a>
+	</header>
+    
+    <div id="wrapper">
+
+    	<div class="slider-wrapper theme-default">
+            <div id="slider" class="nivoSlider">
+		<%= image_tag("flag.jpg", :title=>"#flag", :alt=>"flag", "data-thumb"=>"assets/flag.jpg") %>
+		<%= image_tag("daughter.jpg", :title=>"#daughter", :alt=>"daughter", "data-thumb"=>"assets/daughter.jpg") %>
+		<%= image_tag("toystory.jpg", :title=>"#toystory", :alt=>"toystory", "data-thumb"=>"assets/toystory.jpg") %>
+		<%= image_tag("walle.jpg", :title=>"#walle", :alt=>"walle", "data-thumb"=>"assets/walle.jpg") %>
+		<%= image_tag("up.jpg", :title=>"#up", :alt=>"up", "data-thumb"=>"assets/up.jpg") %>
+            </div>
+            <div id="flag" class="nivo-html-caption">
+                <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. <br />
+                <div class="social">
+                	<a href="http://pinterest.com/pin/create/button/?url=&media=&description=">Pinterest</a> | 
+                	<a href="http://www.facebook.com/sharer.php?u=&t=">facebook</a>
+                </div>
+          	</div>
+            <div id="toystory" class="nivo-html-caption">
+                <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. <br />
+                <div class="social">
+                	<a href="http://pinterest.com/pin/create/button/?url=&media=&description=">Pinterest</a> | 
+                	<a href="http://www.facebook.com/sharer.php?u=&t=">facebook</a>
+                </div>
+          	</div>
+            <div id="up" class="nivo-html-caption">
+                <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. <br />
+                <div class="social">
+                	<a href="http://pinterest.com/pin/create/button/?url=&media=&description=">Pinterest</a> | 
+                	<a href="http://www.facebook.com/sharer.php?u=&t=">facebook</a>
+                </div>
+          	</div>
+            <div id="walle" class="nivo-html-caption">
+                <div class="social">
+                	<a href="http://pinterest.com/pin/create/button/?url=&media=&description=">Pinterest</a> | 
+                	<a href="http://www.facebook.com/sharer.php?u=&t=">facebook</a>
+                </div>
+          	</div>
+            <div id="daughter" class="nivo-html-caption">
+                <div class="social">
+                	<a href="http://pinterest.com/pin/create/button/?url=&media=&description=">Pinterest</a> | 
+                	<a href="http://www.facebook.com/sharer.php?u=&t=">facebook</a>
+                </div>
+          	</div>
+        </div>
+    	<div class="push"></div>
+    </div>
+  </div>
+    
+    <script type="text/javascript">
+    $(function(){
+        $('#slider').nivoSlider({
+        	effect: 'fade',
+        	manualAdvance: true,
+        	controlNavThumbs: true
+        });
+    });
+    </script>
